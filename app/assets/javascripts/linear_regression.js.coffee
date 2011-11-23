@@ -14,7 +14,7 @@
 @averagePoint = (points) ->
 	Ex = points.reduce ((sum, e) -> e.x + sum), 0
 	Ey = points.reduce ((sum, e) -> e.y + sum), 0
-	{avgX: Ex/points.length, avgY: Ey/points.length}
+	avgX: Ex/points.length, avgY: Ey/points.length
 
 @lineOffset = (lineFn, averagePoint) ->
 
@@ -23,11 +23,11 @@
 
 @rand = (min, max) -> min + Math.floor(Math.random()*max)
 
-@draw = () ->
+@draw = ->
 	height = 200
 	width = 320
 	radius = 10
-	numPoints = 10
+	numPoints = 20
 	$("#graph").css("width",width+"px").css("height",height+"px").css("background-color","gray")
 	paper = Raphael "graph", width, height
 	points = randomPoints(numPoints, radius, radius, width - radius, height - radius)
