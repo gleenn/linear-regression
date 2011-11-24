@@ -24,10 +24,10 @@
 @rand = (min, max) -> min + Math.floor(Math.random()*max)
 
 @draw = ->
-	height = 200
-	width = 320
+	height = 400
+	width = 640
 	radius = 10
-	numPoints = 20
+	numPoints = 5
 	$("#graph").css("width",width+"px").css("height",height+"px").css("background-color","gray")
 	paper = Raphael "graph", width, height
 	points = randomPoints(numPoints, radius, radius, width - radius, height - radius)
