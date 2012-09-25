@@ -1,3 +1,9 @@
 A simple linear regression app that generates 5 random points and then plots a line through them.
 
 Written all in Coffeescript.
+
+Check it out live:
+
+http://linear-regression.herokuapp.com/
+
+Refresh the page a lot for different regressions...
